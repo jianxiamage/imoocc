@@ -2,12 +2,13 @@
 1.执行命令，安装模块
 　　pip install -r ./requirements.txt
 
+
 2.imoocc-master/admin/settings/settings.py
   确认数据库信息，包括数据库名称，用户名，密码等
 
 3.登录mysql,创建数据库，创建用户，设置密码。
 
-　　　　　　　　create database imoocc;
+　　　　　　　　create database imoocc DEFAULT CHARACTER SET utf8 COLLATE utf8_general_ci;
 
 　　　　　　　　grant all on imoocc.* to imoocc@"localhost" identified by 'imoocccom';
 
